@@ -11,7 +11,7 @@ repositories {
 - Add the dependency:
   ```bash
   dependencies {
-    implementation 'https://github.com/telexintegrations/telex-android-logger'}```
+    implementation ''com.github.telexintegrations:telex-android-logger:1.0.0''}```
 - Initialize Yor application class:
 ```bash
     class MyApp : Application() {
@@ -66,5 +66,15 @@ class PaymentProcessor {
     }
 }
 ```
+
+- Grant Internet Permission in Android Manifes
+  ```bash
+      <manifest xlmns:android...>
+     ...
+     <uses-permission android:name="android.permission.INTERNET" />
+     <application ...
+    </manifest>
+  ```
+
 
   
